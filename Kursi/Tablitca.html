@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Табличка </title>
+</head>
+<body>
+<table border="5">
+    <caption>Таблица</caption>
+    <tr>
+        <td rowspan="2">First</td>
+        <td colspan="2">Second</td>
+    </tr>
+    <tr>
+        <td>Third</td>
+        <td>Fourth</td>
+    </tr>
+</table>
+<!--Формы-->
+<form name="search" action="/">
+    <input type="text" name="t" value="goit"/>
+    <input type="submit" value="Search"/>
+</form><br/><br/>
+<form name="search" action="/">
+    Имя:
+    <input type="text" name="name"/><br/>
+    Фамилия:
+    <input type="text" name="lastname"/><br/>
+    Пароль:
+    <input type="password" name="pwd"/><br/>
+    <input type="radio" name="sex" value="male"/> Мужской <br/>
+    <input type="radio" name="sex" value="female"/> Женский <br/>
+    <input type="checkbox" name="vehicle" value="bike"/> У меня есть мотоцикл <br/>
+    <input type="checkbox" name="vehicle" value="car"/> У меня есть автомобиль <br/><br/>
+    <textarea rows="4" cols="20" name="mytext">Тут можно оставить комментарий</textarea><br/><br/>
+    <span>Что я люблю<span/>
+    <select name="food">
+        <option value="pie">Пирог</option>
+        <option value="bread" selected="selected">Хлеб</option>
+        <option value="cookie" label="Печенье"></option>
+    </select><br/><br/>
+    <input type="submit" value="Отправить"/>
+    <input type="reset" value="Очистить"/><br/><br/>
+         <select name="food" size="3" multiple="multiple">
+             <option value="pie">Пирог</option>
+             <option value="bread" selected="selected">Хлеб</option>
+             <option value="cookie" label="Печенье"></option> <br/><br/>
+         </select><br/><br/>
+        <select>
+            <optgroup label="Шведские авто">
+                <option value="volvo">Вольво</option>
+                <option value="saab">Сааб</option>
+            </optgroup>
+            <optgroup label="Немецкие авто">
+                <option value="vw">Фольцванен</option>
+                <option value="audi">Ауди</option>
+            </optgroup>
+        </select><br/><br/>
+</form>
+</body>
+</html>
